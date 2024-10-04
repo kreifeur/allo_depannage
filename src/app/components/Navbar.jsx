@@ -23,7 +23,7 @@ const Navbar = () => {
 
       <div className="h-[14vh] flex items-center   border-b justify-between bg-white">
         <div className="h-[10vh]  sm:px-[4vh] px-2 z-[3]">
-          <Image className="h-full" width={120} height={300} src={image.src} />
+          <Image className="h-full" width={150} height={300} src={image.src} />
         </div>
         <ul className="flex gap-7 items-center h-full">
           <div className="sm:flex hidden gap-7 items-center h-full ">
