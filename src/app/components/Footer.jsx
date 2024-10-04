@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../../public/2-removebg-preview.png";
+import image from "../../../public/w-logo.png";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { FaPhone } from "react-icons/fa";
-import image from "../../../public/ALLO.png";
+import image from "../../../public/v-logo.png";
 import { IoLocation } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";
