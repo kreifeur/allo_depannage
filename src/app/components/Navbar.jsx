@@ -11,7 +11,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState("hidden");
   return (
     <div className="uppercase tracking-wider sticky top-0 z-[100] font-bold">
-      <div className="h-[7vh] bg-gray-100 px-[4vh] flex items-center justify-between font-bold">
+      <div className="h-[7vh] bg-gray-100 sm:px-[4vh] px-2 flex items-center justify-between font-bold">
         <div className="flex items-center gap-1">
           {" "}
           <IoLocation className="text-md" /> Île-de-France
