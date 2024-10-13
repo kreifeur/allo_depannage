@@ -62,14 +62,17 @@ export default function Home() {
         <div className="flex p-8 sm:h-[90vh] flex-col sm:flex-row gap-6">
           <div className="sm:w-[50%]  flex flex-col gap-4 items-center justify-center">
             <div className="sm:w-[70%] flex flex-col gap-4">
-              <div className="font-bold text-2xl">
-                WE ARE <span className="text-orange-500">ALLO DEPANNAGE</span>
+              <div className="font-bold text-2xl uppercase">
+                Qui sommes-nous ?
               </div>
               <div className="text-xl">
-                Epaviste Gratuit IDF est là pour s’occuper de vos besoins
-                d’enlèvement d’épave gratuit à Paris à tout moment, n’importe
-                quel jour. Nous prenons en charge toutes les tâches liées à ce
-                processus difficile.
+                ALLO RECYCLAGE VHU agrée est une équipe de professionnels
+                confirmés, spécialisée dans l’enlèvement d’épave et le recyclage
+                de tous types de véhicules à Paris et sa banlieue depuis plus de
+                15 ans. <br /> Nous disposons d’une expérience significative
+                dans le recyclage des métaux, ainsi que le dépannage et
+                l’assistance de voitures. <br />
+                Les maîtres-mots de la satisfaction des clients.
               </div>
               <div className="font-bold flex gap-2 items-center">
                 FIND OUT MORE{" "}
@@ -92,18 +95,22 @@ export default function Home() {
         {/* band image */}
         {/* <img className="w-full h-[50vh]" src={image3.src} alt="" srcset="" /> */}
         <div
-          className="w-full h-[500px] bg-cover bg-center flex p-8 flex items-center"
+          className="w-full min-h-[500px] bg-cover bg-center flex p-8 flex items-center"
           style={{ backgroundImage: `url(${image3.src})` }}
         >
-          <div className="min-h-full sm:w-[50%] w-full bg-white sm:px-[20vh] p-4 flex flex-col justify-center gap-8 border-t border-t-[15px] border-t-[#03a776]">
-            <div className="font-bold text-3xl">
-              WHY <span className="text-orange-500">ALLO DEPANNAGE</span> !
+          <div className="min-h-full sm:w-[50%] w-full bg-white sm:px-[10vh] p-4 flex flex-col justify-center gap-8 border-t border-t-[15px] border-t-[#03a776] ">
+            <div className="font-bold text-3xl uppercase ">
+              L’écologie du recyclage :
             </div>
-            <div className="text-xl">
-              Epaviste Gratuit IDF est là pour s’occuper de vos besoins
-              d’enlèvement d’épave gratuit à Paris à tout moment, n’importe quel
-              jour. Nous prenons en charge toutes les tâches liées à ce
-              processus difficile.
+            <div className="text-lg">
+              Enjeu crucial du moment, la protection de l’environnement est
+              désormais une priorité collective et sociale face à l’urgence
+              climatique. Le recyclage des métaux réduit considérablement les
+              émissions de gaz à effet de serre en diminuant les nouvelles
+              demandes de matières premières et prévient la pollution associée
+              aux activités minières intensives. Il permet également la
+              protection des sols et des nappes phréatiques des substances
+              nocives contenues dans les métaux usagers.
             </div>
           </div>
         </div>
