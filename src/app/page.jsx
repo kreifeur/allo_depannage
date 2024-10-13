@@ -65,7 +65,7 @@ export default function Home() {
               <div className="font-bold text-2xl uppercase">
                 Qui sommes-nous ?
               </div>
-              <div className="text-xl">
+              <div className="text-md">
                 ALLO RECYCLAGE VHU agrée est une équipe de professionnels
                 confirmés, spécialisée dans l’enlèvement d’épave et le recyclage
                 de tous types de véhicules à Paris et sa banlieue depuis plus de
@@ -98,11 +98,11 @@ export default function Home() {
           className="w-full min-h-[500px] bg-cover bg-center flex p-8 flex items-center"
           style={{ backgroundImage: `url(${image3.src})` }}
         >
-          <div className="min-h-full sm:w-[50%] w-full bg-white sm:px-[10vh] p-4 flex flex-col justify-center gap-8 border-t border-t-[15px] border-t-[#03a776] ">
+          <div className="min-h-full sm:w-[50%] w-full bg-white sm:px-[10vh] p-8 flex flex-col justify-center gap-8 border-t border-t-[15px] border-t-[#03a776] ">
             <div className="font-bold text-3xl uppercase ">
               L’écologie du recyclage :
             </div>
-            <div className="text-lg">
+            <div className="text-md">
               Enjeu crucial du moment, la protection de l’environnement est
               désormais une priorité collective et sociale face à l’urgence
               climatique. Le recyclage des métaux réduit considérablement les
