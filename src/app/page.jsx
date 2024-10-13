@@ -1,23 +1,62 @@
 import Image from "next/image";
 import image from "../../public/remorquage.jpg";
 import image1 from "../../public/remorquage.jpg";
-import image2 from "../../public/UFC_August2020_JBR-Businessbay_ralfhjigger-26.jpg";
+import image2 from "../../public/logo-republique-francaise.png";
 import image3 from "../../public/remorquage.jpg";
+import image5 from "../../public/logo-republique-francaise.png";
 import { FaArrowRightLong } from "react-icons/fa6";
-import image4 from "../../public/band.jpg";
+import image4 from "../../public/eco.png";
 
 import { FaPhone } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div>
+      <div
+        className="flex h-[79vh] bg-cover bg-center relative flex items-center p-4 gap-[8vh]"
+        style={{ backgroundImage: `url(${image3.src})` }}
+      >
+        {/*  className="w-full h-[500px] bg-cover bg-center flex p-8 flex items-center" */}
+
+        <div className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.7)] text-white flex flex-col sm:flex-row  items-center justify-center gap-4 z-[1] px-8">
+          <div className="text-white z-[1] flex flex-col gap-8 sm:w-[50%]">
+            <div className="text-5xl font-bold">ALLO DEPANNAGE</div>
+            <p className="text-md font-bold italic">
+              Enlèvement épave 7/7J en Ile de France. VHU Service gratuit. Paris
+              75, Seine et Marne 77, Yvelines 78, Essonne 91, Hauts de Seine 92,
+              Seine Saint Denis 93, Val de Marne 94, Val d’Oise 95
+            </p>
+            <button className="bg-[#03a776] px-8 py-3 font-bold sm:max-w-max ">
+              <p>Appel Gratuit -24h/24 </p>
+              <p>09 90 77 99 10</p>
+            </button>
+          </div>
+
+          <div className="sm:w-[50%] flex items-center justify-center gap-8">
+            <Image
+              className="h-full"
+              width={150}
+              height={300}
+              src={image2.src}
+            />
+
+            <Image
+              className="h-full"
+              width={150}
+              height={300}
+              src={image4.src}
+            />
+          </div>
+        </div>
+      </div>
       <div className="">
-        <Image
+        {/* <Image
           src={image1.src}
           width={1000}
           height={1000}
           style={{ width: "100%", height: "auto" }}
-        />
+        /> */}
+
         {/* section 1 */}
         <div className="flex p-8 sm:h-[90vh] flex-col sm:flex-row gap-6">
           <div className="sm:w-[50%]  flex flex-col gap-4 items-center justify-center">
