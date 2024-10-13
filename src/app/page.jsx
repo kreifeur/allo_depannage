@@ -22,9 +22,10 @@ export default function Home() {
           <div className="text-white z-[1] flex flex-col sm:gap-8 gap-5 sm:w-[50%]">
             <div className="sm:text-5xl font-bold text-3xl">ALLO DEPANNAGE</div>
             <p className="sm:text-md sm:font-bold italic text-md">
-              Enlèvement épave 7/7J en Ile de France. VHU Service gratuit. Paris
-              75, Seine et Marne 77, Yvelines 78, Essonne 91, Hauts de Seine 92,
-              Seine Saint Denis 93, Val de Marne 94, Val d’Oise 95
+              Notre équipe, composée d’une vingtaine d’experts, est apte à
+              intervenir dans toute l’Ile de France gratuitement afin de vous
+              débarrasser de votre épave dans les meilleures conditions et
+              participer ainsi à la réduction de l’empreinte environnementale
             </p>
             <button className="bg-[#03a776] px-8 py-3 font-bold sm:max-w-max ">
               <p>Appel Gratuit -24h/24 </p>
