@@ -13,15 +13,15 @@ export default function Home() {
   return (
     <div>
       <div
-        className="flex h-[79vh] bg-cover bg-center relative flex items-center p-4 gap-[8vh]"
+        className="flex h-[79vh] bg-cover bg-center relative flex items-center sm:p-4 gap-[8vh]"
         style={{ backgroundImage: `url(${image3.src})` }}
       >
         {/*  className="w-full h-[500px] bg-cover bg-center flex p-8 flex items-center" */}
 
-        <div className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.7)] text-white flex flex-col sm:flex-row  items-center justify-center gap-4 z-[1] px-8">
+        <div className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.7)] text-white flex flex-col sm:flex-row  items-center justify-center gap-4 z-[1] sm:px-8 px-2">
           <div className="text-white z-[1] flex flex-col sm:gap-8 gap-5 sm:w-[50%]">
             <div className="sm:text-5xl font-bold text-3xl">ALLO DEPANNAGE</div>
-            <p className="sm:text-md font-bold italic text-lg">
+            <p className="sm:text-md sm:font-bold italic text-md">
               Enlèvement épave 7/7J en Ile de France. VHU Service gratuit. Paris
               75, Seine et Marne 77, Yvelines 78, Essonne 91, Hauts de Seine 92,
               Seine Saint Denis 93, Val de Marne 94, Val d’Oise 95
