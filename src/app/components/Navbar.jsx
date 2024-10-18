@@ -12,13 +12,13 @@ const Navbar = () => {
   return (
     <div className="uppercase tracking-wider sticky top-0 z-[100] font-bold">
       <div className="h-[7vh] bg-gray-100 sm:px-[4vh] px-2 flex items-center justify-between font-bold">
-        <div className="flex items-center gap-1">
+        <a href="#ile" className="flex items-center gap-1">
           {" "}
           <IoLocation className="text-md" /> Île-de-France
-        </div>
-        <div className="flex items-center gap-1 ">
+        </a>
+        <a href='#contact' className="flex items-center gap-1 ">
           Contact us <FaArrowRightLong className="text-md text-[#03a776]" />
-        </div>
+        </a>
       </div>
 
       <div className="h-[14vh] flex items-center   border-b justify-between bg-white">

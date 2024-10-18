@@ -180,7 +180,7 @@ export default function Home() {
       </div>
 
       {/* region d'intervention 1 */}
-      <div className="flex p-8  flex-col sm:flex-row gap-6 items-center">
+      <div id="ile" className="flex p-8  flex-col sm:flex-row gap-6 items-center">
         <div className="sm:w-[50%]  flex flex-col gap-4 items-center justify-center bg-[#03a776] text-white p-8">
           <div className=" flex flex-col  items-center">
             <div className="font-bold text-2xl uppercase mb-1">
@@ -211,7 +211,7 @@ export default function Home() {
       </div>
 
       {/* contact us  */}
-      <div className="flex sm:p-8 p-3 flex-col sm:flex-row  items-center sm:h-[90vh] border ">
+      <div id="contact" className="flex sm:p-8 p-3 flex-col sm:flex-row  items-center sm:h-[90vh] border ">
         <div className="sm:w-[50%] w-full h-full  flex flex-col gap-6 items-center justify-center  sm:p-8 ">
           <div className=" flex flex-col gap-4  items-center w-full">
             <div className="font-bold text-2xl uppercase mb-1 ">
