@@ -60,34 +60,34 @@ export default function Home() {
       <div className="w-full min-h-[200px] flex gap-[7vh] justify-center sm:justify-around items-center flex-col sm:flex-row  p-8">
         <div className="flex flex-col gap-2 items-center">
           <div>
-            <RiStarSFill className="text-4xl text-[#03a776]" />
+            <RiStarSFill className="text-6xl text-[#03a776]" />
           </div>
-          <div className="text-4xl font-bold ">10</div>
+          <div className="text-5xl font-bold ">10</div>
           <div>Ans dexpériense</div>
         </div>
 
         <div className="flex flex-col gap-2 items-center">
           <div>
-            <FaBuilding className="text-4xl text-[#03a776]" />
+            <FaBuilding className="text-6xl text-[#03a776]" />
           </div>
-          <div className="text-4xl font-bold ">10</div>
-          <div>Ans dexpériense</div>
+          <div className="text-5xl font-bold ">7</div>
+          <div>Départements IDF</div>
         </div>
 
         <div className="flex flex-col gap-2 items-center">
           <div>
-            <GiTowTruck className="text-4xl text-[#03a776]" />
+            <GiTowTruck className="text-6xl text-[#03a776]" />
           </div>
-          <div className="text-4xl font-bold ">10</div>
-          <div>Ans dexpériense</div>
+          <div className="text-5xl font-bold ">3251</div>
+          <div>Epaves remorquées</div>
         </div>
 
         <div className="flex flex-col gap-2 items-center">
           <div>
-            <HiMiniUserGroup className="text-4xl text-[#03a776]" />
+            <HiMiniUserGroup className="text-6xl text-[#03a776]" />
           </div>
-          <div className="text-4xl font-bold ">10</div>
-          <div>Ans dexpériense</div>
+          <div className="text-5xl font-bold ">5</div>
+          <div>Remorqueurs</div>
         </div>
       </div>
 
