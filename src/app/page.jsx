@@ -211,8 +211,8 @@ export default function Home() {
       </div>
 
       {/* contact us  */}
-      <div className="flex sm:p-8 p-3 flex-col sm:flex-row  items-center sm:h-[80vh] border">
-        <div className="sm:w-[50%] w-full h-full  flex flex-col gap-6 items-center justify-center  sm:p-8">
+      <div className="flex sm:p-8 p-3 flex-col sm:flex-row  items-center sm:h-[90vh] border ">
+        <div className="sm:w-[50%] w-full h-full  flex flex-col gap-6 items-center justify-center  sm:p-8 ">
           <div className=" flex flex-col gap-4  items-center w-full">
             <div className="font-bold text-2xl uppercase mb-1 ">
               contactez nous
@@ -256,7 +256,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="sm:w-[50%] h-full sm:flex hidden items-center justify-center sm:p-4 bg-red-200 bg-center bg-cover" style={{ backgroundImage: `url(${image3.src})` }}>
+        <div className="sm:w-[50%] h-full sm:flex hidden items-center justify-center  bg-center bg-cover" style={{ backgroundImage: `url(${image3.src})` }}>
          
         </div>
       </div>
