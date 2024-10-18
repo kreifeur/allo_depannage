@@ -180,7 +180,7 @@ export default function Home() {
       </div>
 
       {/* region d'intervention 1 */}
-      <div className="flex p-8  flex-col sm:flex-row gap-6">
+      <div className="flex p-8  flex-col sm:flex-row gap-6 items-center">
         <div className="sm:w-[50%]  flex flex-col gap-4 items-center justify-center bg-[#03a776] text-white p-8">
           <div className=" flex flex-col  items-center">
             <div className="font-bold text-2xl uppercase mb-1">
@@ -207,6 +207,57 @@ export default function Home() {
             alt=""
             srcset=""
           />
+        </div>
+      </div>
+
+      {/* contact us  */}
+      <div className="flex sm:p-8 p-3 flex-col sm:flex-row  items-center sm:h-[80vh] border">
+        <div className="sm:w-[50%] w-full h-full  flex flex-col gap-6 items-center justify-center  p-8">
+          <div className=" flex flex-col gap-4  items-center w-full">
+            <div className="font-bold text-2xl uppercase mb-1 ">
+              contactez nous
+            </div>
+            <div className="w-full flex flex-col gap-5">
+              <input
+                placeholder="Nom et Prenom"
+                className="border px-4 outline-none py-1 w-full "
+                type="text"
+              />
+              <input
+                placeholder="Modele de voiture"
+                className="border px-4 outline-none py-1 w-full "
+                type="text"
+              />
+              <input
+                placeholder="Telephone"
+                className="border px-4 outline-none py-1 w-full "
+                type="text"
+              />
+              <input
+                placeholder="E-mail"
+                className="border px-4 outline-none py-1 w-full "
+                type="text"
+              />
+              <input
+                placeholder="code Postal"
+                className="border px-4 outline-none py-1 w-full "
+                type="text"
+              />
+              <input
+                placeholder="commentaire"
+                className="border px-4 outline-none py-1 w-full "
+                type="text"
+              />
+
+              <div className="px-6 py-3 bg-[#03a776] font-bold flex items-center justify-center text-white gap-2">
+                <FaPhone className="text-xl" /> Call now{" "}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="sm:w-[50%] h-full sm:flex hidden items-center justify-center p-4 bg-red-200 bg-center bg-cover" style={{ backgroundImage: `url(${image3.src})` }}>
+         
         </div>
       </div>
 
