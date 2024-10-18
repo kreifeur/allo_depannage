@@ -220,32 +220,32 @@ export default function Home() {
             <div className="w-full flex flex-col gap-5">
               <input
                 placeholder="Nom et Prenom"
-                className="border px-4 outline-none py-1 w-full "
+                className="border px-4 outline-none py-2 w-full "
                 type="text"
               />
               <input
                 placeholder="Modele de voiture"
-                className="border px-4 outline-none py-1 w-full "
+                className="border px-4 outline-none py-2 w-full "
                 type="text"
               />
               <input
                 placeholder="Telephone"
-                className="border px-4 outline-none py-1 w-full "
+                className="border px-4 outline-none py-2 w-full "
                 type="text"
               />
               <input
                 placeholder="E-mail"
-                className="border px-4 outline-none py-1 w-full "
+                className="border px-4 outline-none py-2 w-full "
                 type="text"
               />
               <input
                 placeholder="code Postal"
-                className="border px-4 outline-none py-1 w-full "
+                className="border px-4 outline-none py-2 w-full "
                 type="text"
               />
               <input
                 placeholder="commentaire"
-                className="border px-4 outline-none py-1 w-full "
+                className="border px-4 outline-none py-2 w-full "
                 type="text"
               />
 
@@ -256,7 +256,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="sm:w-[50%] h-full sm:flex hidden items-center justify-center p-4 bg-red-200 bg-center bg-cover" style={{ backgroundImage: `url(${image3.src})` }}>
+        <div className="sm:w-[50%] h-full sm:flex hidden items-center justify-center sm:p-4 bg-red-200 bg-center bg-cover" style={{ backgroundImage: `url(${image3.src})` }}>
          
         </div>
       </div>
