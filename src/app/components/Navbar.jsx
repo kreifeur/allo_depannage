@@ -33,8 +33,7 @@ const Navbar = () => {
             <li>Contact us</li>
             <li>about</li> */}
             <Link href="/Certificat de cession.pdf" passHref>
-
-                Certificat de cession
+              Certificat de cession
             </Link>
             <Link href="/privacy">Politique de confidentialité</Link>
             <Link href="https://siv.interieur.gouv.fr/map-usg-ui/do/accueil_certificat">
@@ -63,11 +62,13 @@ const Navbar = () => {
       <ul
         className={`${menu} h-[100vh] w-full bg-black flex flex-col items-center justify-center text-white gap-5 inset-0 z-[2] sm:hidden`}
       >
-        <li>Locations</li>
-        <li>Blog</li>
-        <li>Contact us</li>
-        <li>about</li>
-        <li>memberships</li>
+        <Link href="/Certificat de cession.pdf" passHref>
+          Certificat de cession
+        </Link>
+        <Link href="/privacy">Politique de confidentialité</Link>
+        <Link href="https://siv.interieur.gouv.fr/map-usg-ui/do/accueil_certificat">
+          Certificat de non-gage
+        </Link>
       </ul>
     </div>
   );
