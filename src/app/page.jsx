@@ -269,7 +269,7 @@ export default function Home() {
 
       {/* Q&F */}
       <div className="max-w-4xl mx-auto p-4">
-      <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+      <div className="font-bold text-2xl uppercase mb-4 ">Questions Fréquentes</div>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div
@@ -280,7 +280,7 @@ export default function Home() {
               onClick={() => toggleFAQ(index)}
               className="w-full flex justify-between items-center text-left "
             >
-              <span className="text-lg font-medium">{faq.question}</span>
+              <span className="text-md font-medium">{faq.question}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className={`h-6 w-6 transform transition-transform ${
@@ -299,7 +299,7 @@ export default function Home() {
               </svg>
             </button>
             {activeIndex === index && (
-              <p className="mt-2 text-gray-600">{faq.answer}</p>
+              <p className="mt-2 text-gray-600 text-md">{faq.answer}</p>
             )}
           </div>
         ))}
