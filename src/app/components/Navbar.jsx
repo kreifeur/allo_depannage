@@ -13,19 +13,19 @@ const Navbar = () => {
   return (
     <div className="uppercase tracking-wider sticky top-0 z-[100] font-bold">
       <div className="h-[7vh] bg-gray-100 sm:px-[4vh] px-2 flex items-center justify-between font-bold">
-        <a href="#ile" className="flex items-center gap-1">
+        <a href="/#ile" className="flex items-center gap-1">
           {" "}
           <IoLocation className="text-md" /> Île-de-France
         </a>
-        <a href="#contact" className="flex items-center gap-1 ">
+        <a href="/#contact" className="flex items-center gap-1 ">
           Contact us <FaArrowRightLong className="text-md text-[#03a776]" />
         </a>
       </div>
 
       <div className="h-[14vh] flex items-center   border-b justify-between bg-white">
-        <div className="h-[10vh]  sm:px-[4vh] px-2 z-[3]">
+        <Link href="/" className="h-[10vh]  sm:px-[4vh] px-2 z-[3]">
           <Image className="h-full" width={150} height={300} src={image.src} />
-        </div>
+        </Link>
         <ul className="flex gap-7 items-center h-full">
           <div className="sm:flex hidden gap-7 items-center h-full ">
             {/* <li>Locations</li>

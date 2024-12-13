@@ -278,12 +278,12 @@ export default function Home() {
           >
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left gap-2"
+              className="w-full flex justify-between items-center text-left "
             >
-              <span className="text-md font-medium ">{faq.question}</span>
+              <span className="text-md font-medium w-[80%] ">{faq.question}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={`h-6 w-6 transform transition-transform ${
+                className={`h-6 w-[10%] transform transition-transform ${
                   activeIndex === index ? "rotate-180" : "rotate-0"
                 }`}
                 fill="none"
