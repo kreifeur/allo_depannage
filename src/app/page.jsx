@@ -278,9 +278,9 @@ export default function Home() {
           >
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left "
+              className="w-full flex justify-between items-center text-left gap-2"
             >
-              <span className="text-md font-medium">{faq.question}</span>
+              <span className="text-md font-medium ">{faq.question}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className={`h-6 w-6 transform transition-transform ${
