@@ -1,3 +1,5 @@
+'use client'
+import { useState } from "react";
 import Image from "next/image";
 import image from "../../public/remorquage.jpg";
 import image1 from "../../public/remorquage.jpg";
@@ -14,6 +16,61 @@ import { FaBuilding } from "react-icons/fa";
 import { HiMiniUserGroup } from "react-icons/hi2";
 
 export default function Home() {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setActiveIndex(index === activeIndex ? null : index);
+  };
+
+  const faqs = [
+    {
+      question: "Les enlèvements par un professionnel agréé sont-ils gratuits ? ",
+      answer: "Tout enlèvement dans notre périmètre d’intervention est totalement gratuit.",
+    },
+    {
+      question: "Quelle condition pour bénéficier gratuitement du service d’un épaviste agrée ?",
+      answer: "La seule et l’unique condition est d’être propriétaire du véhicule à enlever.",
+    },
+    {
+      question: "Carte grise égarée.. pouvez-vous tout de même enlever gratuitement mon véhicule ?",
+      answer: "Nous pouvons intervenir pour enlever votre véhicule. Il vous suffit de faire une déclaration de perte auprès de l’autorité compétente. N’hésitez pas à nous joindre par téléphone, nous nous ferons un plaisir de vous renseigner.",
+    },
+    {
+      question: "Mon véhicule provient d’une succession, pouvez-vous l’enlever gratuitement ?",
+      answer: "Nous pouvons intervenir pour enlever votre véhicule. Il vous suffit de nous fournir l’ancienne carte grise et l’attestation dévolutive du notaire. N’hésitez pas à nous joindre par téléphone, nous nous ferons un plaisir de vous renseigner.",
+    },
+
+
+    {
+      question: "Je n’ai pas fait le changement de carte grise, pouvez-vous enlever mon véhicule gratuitement ?",
+      answer: "Nous pouvons intervenir pour enlever votre véhicule. Il vous suffit de nous fournir le certificat de cession de l’ancien propriétaire signé.",
+    },
+
+    {
+      question: "Un justificatif d’enlèvement est-il fourni ?",
+      answer: "Absolument, un justificatif est fourni le jour même de l’enlèvement de votre véhicule.",
+    },
+
+    {
+      question: "Quels types de véhicule sont concernés ?",
+      answer: "Tout type de véhicule.  Qu’il soit roulant, non roulant, en panne, accidenté, brûlé et autres. N’hésitez pas à nous joindre par téléphone, nous nous ferons un plaisir de vous renseigner.",
+    },
+
+
+
+    {
+      question: "Le véhicule doit-il rouler ? ",
+      answer: "Pas forcément, notre équipe composée de professionnels agréés et expérimentés est disposée à intervenir dans des conditions parfois très complexes.",
+    },
+
+    {
+      question: "Assurez-vous l’enlèvement dans des lieux difficilement accessible ?",
+      answer: "Notre matériel adapté et notre expérience nous permettent d’intervenir dans toutes circonstances.",
+    },
+
+  ];
+
+
   return (
     <div className="">
       <div
@@ -209,6 +266,45 @@ export default function Home() {
           />
         </div>
       </div>
+
+      {/* Q&F */}
+      <div className="max-w-4xl mx-auto p-4">
+      <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+      <div className="space-y-4">
+        {faqs.map((faq, index) => (
+          <div
+            key={index}
+            className="border-b border-gray-300 pb-4"
+          >
+            <button
+              onClick={() => toggleFAQ(index)}
+              className="w-full flex justify-between items-center text-left "
+            >
+              <span className="text-lg font-medium">{faq.question}</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className={`h-6 w-6 transform transition-transform ${
+                  activeIndex === index ? "rotate-180" : "rotate-0"
+                }`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            {activeIndex === index && (
+              <p className="mt-2 text-gray-600">{faq.answer}</p>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
 
       {/* contact us  */}
       <div id="contact" className="flex sm:p-8 p-3 flex-col sm:flex-row  items-center sm:h-[90vh] border ">
