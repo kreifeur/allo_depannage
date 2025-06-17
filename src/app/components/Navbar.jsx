@@ -44,9 +44,9 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="flex h-full">
-            <li className="sm:px-6 px-4 bg-[#03a776] h-full flex items-center font-bold text-white gap-2">
+            <li onClick={handleCall} className="sm:px-6 px-4 bg-[#03a776] h-full flex items-center font-bold text-white gap-2">
               <FaPhone className="sm:text-xl text-2xl" />{" "}
-              <div onClick={handleCall} className="sm:flex hidden">
+              <div  className="sm:flex hidden">
                 Call now{" "}
               </div>
             </li>
