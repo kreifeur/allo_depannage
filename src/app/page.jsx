@@ -9,7 +9,7 @@ import image5 from "../../public/iledefrance.gif";
 import { FaArrowRightLong } from "react-icons/fa6";
 import image4 from "../../public/eco.png";
 import { RiStarSFill } from "react-icons/ri";
-
+import { IoSend } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa";
 import { GiTowTruck } from "react-icons/gi";
 import { FaBuilding } from "react-icons/fa";
@@ -346,7 +346,7 @@ export default function Home() {
               />
 
               <div className="px-6 py-3 bg-[#03a776] font-bold flex items-center justify-center text-white gap-2">
-                <FaPhone className="text-xl" /> Call now{" "}
+                <IoSend  className="text-xl" /> SEND NOW{" "}
               </div>
             </div>
           </div>

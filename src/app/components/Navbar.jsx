@@ -9,6 +9,9 @@ import Image from "next/image";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 const Navbar = () => {
+  const handleCall = () => {
+    window.location.href = "tel:+213541913941"; // Replace with your desired number
+  };
   const [menu, setMenu] = useState("hidden");
   return (
     <div className="uppercase tracking-wider sticky top-0 z-[100] font-bold">
@@ -43,7 +46,9 @@ const Navbar = () => {
           <div className="flex h-full">
             <li className="sm:px-6 px-4 bg-[#03a776] h-full flex items-center font-bold text-white gap-2">
               <FaPhone className="sm:text-xl text-2xl" />{" "}
-              <div className="sm:flex hidden">Call now </div>
+              <div onClick={handleCall} className="sm:flex hidden">
+                Call now{" "}
+              </div>
             </li>
             <li className="sm:px-10 px-4 bg-black h-full flex items-center font-bold text-white sm:hidden  z-[3]">
               {menu == "hidden" ? (
