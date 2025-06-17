@@ -16,6 +16,9 @@ import { FaBuilding } from "react-icons/fa";
 import { HiMiniUserGroup } from "react-icons/hi2";
 
 export default function Home() {
+   const handleCall = () => {
+    window.location.href = "tel:+213541913941"; // Replace with your desired number
+  };
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -364,7 +367,7 @@ export default function Home() {
       >
         <div className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.7)] text-white flex flex-col items-center justify-center gap-4 z-[1]">
           <div className="font-bold text-3xl">CONTACT US NOW</div>
-          <div className="px-6 py-3 bg-[#03a776] font-bold flex items-center gap-2">
+          <div onClick={handleCall} className="px-6 py-3 bg-[#03a776] font-bold flex items-center gap-2 ">
             <FaPhone className="text-xl" /> Call now{" "}
           </div>
         </div>
