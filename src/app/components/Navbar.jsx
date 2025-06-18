@@ -10,7 +10,7 @@ import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 const Navbar = () => {
   const handleCall = () => {
-    window.location.href = "tel:+213541913941"; // Replace with your desired number
+    window.location.href = "tel:+213556347931"; // Replace with your desired number
   };
   const [menu, setMenu] = useState("hidden");
   return (
