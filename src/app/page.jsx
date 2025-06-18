@@ -29,6 +29,12 @@ export default function Home() {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
+      nomPrenom: "",
+      modeleVoiture: "",
+      telephone: "",
+      email: "",
+      codePostal: "",
+      commentaire: "",
     });
   };
 
@@ -205,8 +211,7 @@ export default function Home() {
               Les maîtres-mots de la satisfaction des clients.
             </div>
             <div className="font-bold flex gap-2 items-center">
-              VOIR PLUS{" "}
-              <FaArrowRightLong className="text-[#03a776] text-md" />
+              VOIR PLUS <FaArrowRightLong className="text-[#03a776] text-md" />
             </div>
           </div>
         </div>
@@ -259,8 +264,7 @@ export default function Home() {
               processus difficile.
             </div>
             <div className="font-bold flex gap-2 items-center">
-              VOIR PLUS{" "}
-              <FaArrowRightLong className="text-[#03a776] text-md" />
+              VOIR PLUS <FaArrowRightLong className="text-[#03a776] text-md" />
             </div>
           </div>
         </div>
@@ -352,79 +356,79 @@ export default function Home() {
 
       {/* contact us  */}
       <div
-      id="contact"
-      className="flex sm:p-8 p-3 flex-col sm:flex-row items-center sm:h-[90vh] border"
-    >
-      <div className="sm:w-[50%] w-full h-full flex flex-col gap-6 items-center justify-center sm:p-8 ">
-        <div className="flex flex-col gap-4 items-center w-full">
-          <div className="font-bold text-2xl uppercase mb-1 ">
-            contactez nous
-          </div>
-          <div className="w-full flex flex-col gap-5">
-            <input
-              name="nomPrenom"
-              value={formData.nomPrenom}
-              onChange={handleChange}
-              placeholder="Nom et Prenom"
-              className="border px-4 outline-none py-2 w-full"
-              type="text"
-            />
-            <input
-              name="modeleVoiture"
-              value={formData.modeleVoiture}
-              onChange={handleChange}
-              placeholder="Modele de voiture"
-              className="border px-4 outline-none py-2 w-full"
-              type="text"
-            />
-            <input
-              name="telephone"
-              value={formData.telephone}
-              onChange={handleChange}
-              placeholder="Telephone"
-              className="border px-4 outline-none py-2 w-full"
-              type="text"
-            />
-            <input
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="E-mail"
-              className="border px-4 outline-none py-2 w-full"
-              type="text"
-            />
-            <input
-              name="codePostal"
-              value={formData.codePostal}
-              onChange={handleChange}
-              placeholder="code Postal"
-              className="border px-4 outline-none py-2 w-full"
-              type="text"
-            />
-            <input
-              name="commentaire"
-              value={formData.commentaire}
-              onChange={handleChange}
-              placeholder="commentaire"
-              className="border px-4 outline-none py-2 w-full"
-              type="text"
-            />
+        id="contact"
+        className="flex sm:p-8 p-3 flex-col sm:flex-row items-center sm:h-[90vh] border"
+      >
+        <div className="sm:w-[50%] w-full h-full flex flex-col gap-6 items-center justify-center sm:p-8 ">
+          <div className="flex flex-col gap-4 items-center w-full">
+            <div className="font-bold text-2xl uppercase mb-1 ">
+              contactez nous
+            </div>
+            <div className="w-full flex flex-col gap-5">
+              <input
+                name="nomPrenom"
+                value={formData.nomPrenom}
+                onChange={handleChange}
+                placeholder="Nom et Prenom"
+                className="border px-4 outline-none py-2 w-full"
+                type="text"
+              />
+              <input
+                name="modeleVoiture"
+                value={formData.modeleVoiture}
+                onChange={handleChange}
+                placeholder="Modele de voiture"
+                className="border px-4 outline-none py-2 w-full"
+                type="text"
+              />
+              <input
+                name="telephone"
+                value={formData.telephone}
+                onChange={handleChange}
+                placeholder="Telephone"
+                className="border px-4 outline-none py-2 w-full"
+                type="text"
+              />
+              <input
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="E-mail"
+                className="border px-4 outline-none py-2 w-full"
+                type="text"
+              />
+              <input
+                name="codePostal"
+                value={formData.codePostal}
+                onChange={handleChange}
+                placeholder="code Postal"
+                className="border px-4 outline-none py-2 w-full"
+                type="text"
+              />
+              <input
+                name="commentaire"
+                value={formData.commentaire}
+                onChange={handleChange}
+                placeholder="commentaire"
+                className="border px-4 outline-none py-2 w-full"
+                type="text"
+              />
 
-            <button
-              onClick={handleSubmit}
-              className="px-6 py-3 bg-[#03a776] font-bold flex items-center justify-center text-white gap-2"
-            >
-              <IoSend className="text-xl" /> SEND NOW
-            </button>
+              <button
+                onClick={handleSubmit}
+                className="px-6 py-3 bg-[#03a776] font-bold flex items-center justify-center text-white gap-2"
+              >
+                <IoSend className="text-xl" /> SEND NOW
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div
-        className="sm:w-[50%] h-full sm:flex hidden items-center justify-center bg-center bg-cover"
-        style={{ backgroundImage: `url(${image3.src})` }}
-      ></div>
-    </div>
+        <div
+          className="sm:w-[50%] h-full sm:flex hidden items-center justify-center bg-center bg-cover"
+          style={{ backgroundImage: `url(${image3.src})` }}
+        ></div>
+      </div>
 
       {/* band */}
       <div
