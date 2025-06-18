@@ -205,7 +205,7 @@ export default function Home() {
               Les maîtres-mots de la satisfaction des clients.
             </div>
             <div className="font-bold flex gap-2 items-center">
-              FIND OUT MORE{" "}
+              VOIR PLUS{" "}
               <FaArrowRightLong className="text-[#03a776] text-md" />
             </div>
           </div>
@@ -248,18 +248,18 @@ export default function Home() {
       {/* section 2 */}
       <div className="flex sm:flex-row-reverse p-8 sm:h-[90vh] flex-col sm:flex-row gap-6">
         <div className="sm:w-[50%]  flex flex-col gap-4 items-center justify-center">
-          <div className="sm:w-[70%] flex imageflex-col gap-4">
+          <div className="sm:w-[70%] flex flex-col gap-4">
             <div className="font-bold text-2xl">
               POURQUOI <span className="text-orange-500">ALLO DEPANNAGE</span> !
             </div>
-            <div className="text-xl">
+            <div className="text-md">
               Epaviste Gratuit IDF est là pour s’occuper de vos besoins
               d’enlèvement d’épave gratuit à Paris à tout moment, n’importe quel
               jour. Nous prenons en charge toutes les tâches liées à ce
               processus difficile.
             </div>
             <div className="font-bold flex gap-2 items-center">
-              FIND OUT MORE{" "}
+              VOIR PLUS{" "}
               <FaArrowRightLong className="text-[#03a776] text-md" />
             </div>
           </div>
