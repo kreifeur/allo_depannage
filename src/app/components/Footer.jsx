@@ -17,7 +17,14 @@ const Footer = () => {
     <div className="bg-black text-white p-6 min-h-[30vh] font-bold">
       <div className="flex items-center justify-between p-3 border-b sm:flex-row flex-col gap-8">
         <div className="w-[150px]">
-          <img src={image.src} alt="" srcset="" />
+          <Image
+                        className="h-full"
+                        width={150}
+                        height={300}
+                        src={image.src}
+                        srcSet="cc"
+                        alt="einma"
+                      />
         </div>
         <ul className="flex items-center sm:gap-8 sm:flex-row flex-col gap-3">
           <a href="/#ile" className="flex items-center gap-1">

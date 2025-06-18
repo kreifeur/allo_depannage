@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 import image from "../../public/remorquage.jpg";
@@ -16,7 +16,27 @@ import { FaBuilding } from "react-icons/fa";
 import { HiMiniUserGroup } from "react-icons/hi2";
 
 export default function Home() {
-   const handleCall = () => {
+  const [formData, setFormData] = useState({
+    nomPrenom: "",
+    modeleVoiture: "",
+    telephone: "",
+    email: "",
+    codePostal: "",
+    commentaire: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = () => {
+    console.log("Formulaire envoyé avec les valeurs suivantes:");
+    console.log(formData);
+  };
+  const handleCall = () => {
     window.location.href = "tel:+213556347931"; // Replace with your desired number
   };
   const [activeIndex, setActiveIndex] = useState(null);
@@ -27,52 +47,62 @@ export default function Home() {
 
   const faqs = [
     {
-      question: "Les enlèvements par un professionnel agréé sont-ils gratuits ? ",
-      answer: "Tout enlèvement dans notre périmètre d’intervention est totalement gratuit.",
+      question:
+        "Les enlèvements par un professionnel agréé sont-ils gratuits ? ",
+      answer:
+        "Tout enlèvement dans notre périmètre d’intervention est totalement gratuit.",
     },
     {
-      question: "Quelle condition pour bénéficier gratuitement du service d’un épaviste agrée ?",
-      answer: "La seule et l’unique condition est d’être propriétaire du véhicule à enlever.",
+      question:
+        "Quelle condition pour bénéficier gratuitement du service d’un épaviste agrée ?",
+      answer:
+        "La seule et l’unique condition est d’être propriétaire du véhicule à enlever.",
     },
     {
-      question: "Carte grise égarée.. pouvez-vous tout de même enlever gratuitement mon véhicule ?",
-      answer: "Nous pouvons intervenir pour enlever votre véhicule. Il vous suffit de faire une déclaration de perte auprès de l’autorité compétente. N’hésitez pas à nous joindre par téléphone, nous nous ferons un plaisir de vous renseigner.",
+      question:
+        "Carte grise égarée.. pouvez-vous tout de même enlever gratuitement mon véhicule ?",
+      answer:
+        "Nous pouvons intervenir pour enlever votre véhicule. Il vous suffit de faire une déclaration de perte auprès de l’autorité compétente. N’hésitez pas à nous joindre par téléphone, nous nous ferons un plaisir de vous renseigner.",
     },
     {
-      question: "Mon véhicule provient d’une succession, pouvez-vous l’enlever gratuitement ?",
-      answer: "Nous pouvons intervenir pour enlever votre véhicule. Il vous suffit de nous fournir l’ancienne carte grise et l’attestation dévolutive du notaire. N’hésitez pas à nous joindre par téléphone, nous nous ferons un plaisir de vous renseigner.",
+      question:
+        "Mon véhicule provient d’une succession, pouvez-vous l’enlever gratuitement ?",
+      answer:
+        "Nous pouvons intervenir pour enlever votre véhicule. Il vous suffit de nous fournir l’ancienne carte grise et l’attestation dévolutive du notaire. N’hésitez pas à nous joindre par téléphone, nous nous ferons un plaisir de vous renseigner.",
     },
 
-
     {
-      question: "Je n’ai pas fait le changement de carte grise, pouvez-vous enlever mon véhicule gratuitement ?",
-      answer: "Nous pouvons intervenir pour enlever votre véhicule. Il vous suffit de nous fournir le certificat de cession de l’ancien propriétaire signé.",
+      question:
+        "Je n’ai pas fait le changement de carte grise, pouvez-vous enlever mon véhicule gratuitement ?",
+      answer:
+        "Nous pouvons intervenir pour enlever votre véhicule. Il vous suffit de nous fournir le certificat de cession de l’ancien propriétaire signé.",
     },
 
     {
       question: "Un justificatif d’enlèvement est-il fourni ?",
-      answer: "Absolument, un justificatif est fourni le jour même de l’enlèvement de votre véhicule.",
+      answer:
+        "Absolument, un justificatif est fourni le jour même de l’enlèvement de votre véhicule.",
     },
 
     {
       question: "Quels types de véhicule sont concernés ?",
-      answer: "Tout type de véhicule.  Qu’il soit roulant, non roulant, en panne, accidenté, brûlé et autres. N’hésitez pas à nous joindre par téléphone, nous nous ferons un plaisir de vous renseigner.",
+      answer:
+        "Tout type de véhicule.  Qu’il soit roulant, non roulant, en panne, accidenté, brûlé et autres. N’hésitez pas à nous joindre par téléphone, nous nous ferons un plaisir de vous renseigner.",
     },
-
-
 
     {
       question: "Le véhicule doit-il rouler ? ",
-      answer: "Pas forcément, notre équipe composée de professionnels agréés et expérimentés est disposée à intervenir dans des conditions parfois très complexes.",
+      answer:
+        "Pas forcément, notre équipe composée de professionnels agréés et expérimentés est disposée à intervenir dans des conditions parfois très complexes.",
     },
 
     {
-      question: "Assurez-vous l’enlèvement dans des lieux difficilement accessible ?",
-      answer: "Notre matériel adapté et notre expérience nous permettent d’intervenir dans toutes circonstances.",
+      question:
+        "Assurez-vous l’enlèvement dans des lieux difficilement accessible ?",
+      answer:
+        "Notre matériel adapté et notre expérience nous permettent d’intervenir dans toutes circonstances.",
     },
-
   ];
-
 
   return (
     <div className="">
@@ -91,7 +121,10 @@ export default function Home() {
               débarrasser de votre épave dans les meilleures conditions et
               participer ainsi à la réduction de l’empreinte environnementale
             </p>
-            <button onClick={handleCall} className="bg-[#03a776] px-8 py-3 font-bold sm:max-w-max ">
+            <button
+              onClick={handleCall}
+              className="bg-[#03a776] px-8 py-3 font-bold sm:max-w-max "
+            >
               <p>Appel Gratuit -24h/24 </p>
               <p>+213 556347931</p>
             </button>
@@ -103,6 +136,8 @@ export default function Home() {
               width={150}
               height={300}
               src={image2.src}
+              srcSet="..."
+              alt="desc"
             />
 
             <Image
@@ -110,6 +145,8 @@ export default function Home() {
               width={150}
               height={300}
               src={image4.src}
+              srcSet="cc"
+              alt="einma"
             />
           </div>
         </div>
@@ -180,13 +217,13 @@ export default function Home() {
             style={{ width: "100%", height: "auto" }}
             src={image1.src}
             alt=""
-            srcset=""
+            srcSet=""
           />
         </div>
       </div>
 
       {/* band image */}
-      {/* <img className="w-full h-[50vh]" src={image3.src} alt="" srcset="" /> */}
+      {/* <img className="w-full h-[50vh]" src={image3.src} alt="" srcSet="" /> */}
       <div
         className="w-full min-h-[500px] bg-cover bg-center flex p-8 flex items-center"
         style={{ backgroundImage: `url(${image3.src})` }}
@@ -211,9 +248,9 @@ export default function Home() {
       {/* section 2 */}
       <div className="flex sm:flex-row-reverse p-8 sm:h-[90vh] flex-col sm:flex-row gap-6">
         <div className="sm:w-[50%]  flex flex-col gap-4 items-center justify-center">
-          <div className="sm:w-[70%] flex flex-col gap-4">
+          <div className="sm:w-[70%] flex imageflex-col gap-4">
             <div className="font-bold text-2xl">
-              WHY <span className="text-orange-500">ALLO DEPANNAGE</span> !
+              POURQUOI <span className="text-orange-500">ALLO DEPANNAGE</span> !
             </div>
             <div className="text-xl">
               Epaviste Gratuit IDF est là pour s’occuper de vos besoins
@@ -234,13 +271,16 @@ export default function Home() {
             style={{ width: "100%", height: "auto" }}
             src={image.src}
             alt=""
-            srcset=""
+            srcSet=""
           />
         </div>
       </div>
 
       {/* region d'intervention 1 */}
-      <div id="ile" className="flex p-8  flex-col sm:flex-row gap-6 items-center">
+      <div
+        id="ile"
+        className="flex p-8  flex-col sm:flex-row gap-6 items-center"
+      >
         <div className="sm:w-[50%]  flex flex-col gap-4 items-center justify-center bg-[#03a776] text-white p-8">
           <div className=" flex flex-col  items-center">
             <div className="font-bold text-2xl uppercase mb-1">
@@ -265,100 +305,126 @@ export default function Home() {
             className="sm:w-[60%] h-auto w-full"
             src={image5.src}
             alt=""
-            srcset=""
+            srcSet=""
           />
         </div>
       </div>
 
       {/* Q&F */}
       <div className="max-w-4xl mx-auto p-4">
-      <div className="font-bold text-2xl uppercase mb-4 ">Questions Fréquentes</div>
-      <div className="space-y-4">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className="border-b border-gray-300 pb-4"
-          >
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left "
-            >
-              <span className="text-md font-medium w-[80%] ">{faq.question}</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className={`h-6 w-[10%] transform transition-transform ${
-                  activeIndex === index ? "rotate-180" : "rotate-0"
-                }`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+        <div className="font-bold text-2xl uppercase mb-4 ">
+          Questions Fréquentes
+        </div>
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border-b border-gray-300 pb-4">
+              <button
+                onClick={() => toggleFAQ(index)}
+                className="w-full flex justify-between items-center text-left "
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            {activeIndex === index && (
-              <p className="mt-2 text-gray-600 text-md">{faq.answer}</p>
-            )}
-          </div>
-        ))}
+                <span className="text-md font-medium w-[80%] ">
+                  {faq.question}
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`h-6 w-[10%] transform transition-transform ${
+                    activeIndex === index ? "rotate-180" : "rotate-0"
+                  }`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              {activeIndex === index && (
+                <p className="mt-2 text-gray-600 text-md">{faq.answer}</p>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
 
       {/* contact us  */}
-      <div id="contact" className="flex sm:p-8 p-3 flex-col sm:flex-row  items-center sm:h-[90vh] border ">
-        <div className="sm:w-[50%] w-full h-full  flex flex-col gap-6 items-center justify-center  sm:p-8 ">
-          <div className=" flex flex-col gap-4  items-center w-full">
-            <div className="font-bold text-2xl uppercase mb-1 ">
-              contactez nous
-            </div>
-            <div className="w-full flex flex-col gap-5">
-              <input
-                placeholder="Nom et Prenom"
-                className="border px-4 outline-none py-2 w-full "
-                type="text"
-              />
-              <input
-                placeholder="Modele de voiture"
-                className="border px-4 outline-none py-2 w-full "
-                type="text"
-              />
-              <input
-                placeholder="Telephone"
-                className="border px-4 outline-none py-2 w-full "
-                type="text"
-              />
-              <input
-                placeholder="E-mail"
-                className="border px-4 outline-none py-2 w-full "
-                type="text"
-              />
-              <input
-                placeholder="code Postal"
-                className="border px-4 outline-none py-2 w-full "
-                type="text"
-              />
-              <input
-                placeholder="commentaire"
-                className="border px-4 outline-none py-2 w-full "
-                type="text"
-              />
+      <div
+      id="contact"
+      className="flex sm:p-8 p-3 flex-col sm:flex-row items-center sm:h-[90vh] border"
+    >
+      <div className="sm:w-[50%] w-full h-full flex flex-col gap-6 items-center justify-center sm:p-8 ">
+        <div className="flex flex-col gap-4 items-center w-full">
+          <div className="font-bold text-2xl uppercase mb-1 ">
+            contactez nous
+          </div>
+          <div className="w-full flex flex-col gap-5">
+            <input
+              name="nomPrenom"
+              value={formData.nomPrenom}
+              onChange={handleChange}
+              placeholder="Nom et Prenom"
+              className="border px-4 outline-none py-2 w-full"
+              type="text"
+            />
+            <input
+              name="modeleVoiture"
+              value={formData.modeleVoiture}
+              onChange={handleChange}
+              placeholder="Modele de voiture"
+              className="border px-4 outline-none py-2 w-full"
+              type="text"
+            />
+            <input
+              name="telephone"
+              value={formData.telephone}
+              onChange={handleChange}
+              placeholder="Telephone"
+              className="border px-4 outline-none py-2 w-full"
+              type="text"
+            />
+            <input
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="E-mail"
+              className="border px-4 outline-none py-2 w-full"
+              type="text"
+            />
+            <input
+              name="codePostal"
+              value={formData.codePostal}
+              onChange={handleChange}
+              placeholder="code Postal"
+              className="border px-4 outline-none py-2 w-full"
+              type="text"
+            />
+            <input
+              name="commentaire"
+              value={formData.commentaire}
+              onChange={handleChange}
+              placeholder="commentaire"
+              className="border px-4 outline-none py-2 w-full"
+              type="text"
+            />
 
-              <div className="px-6 py-3 bg-[#03a776] font-bold flex items-center justify-center text-white gap-2">
-                <IoSend  className="text-xl" /> SEND NOW{" "}
-              </div>
-            </div>
+            <button
+              onClick={handleSubmit}
+              className="px-6 py-3 bg-[#03a776] font-bold flex items-center justify-center text-white gap-2"
+            >
+              <IoSend className="text-xl" /> SEND NOW
+            </button>
           </div>
         </div>
-
-        <div className="sm:w-[50%] h-full sm:flex hidden items-center justify-center  bg-center bg-cover" style={{ backgroundImage: `url(${image3.src})` }}>
-         
-        </div>
       </div>
+
+      <div
+        className="sm:w-[50%] h-full sm:flex hidden items-center justify-center bg-center bg-cover"
+        style={{ backgroundImage: `url(${image3.src})` }}
+      ></div>
+    </div>
 
       {/* band */}
       <div
@@ -367,7 +433,10 @@ export default function Home() {
       >
         <div className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.7)] text-white flex flex-col items-center justify-center gap-4 z-[1]">
           <div className="font-bold text-3xl">CONTACT US NOW</div>
-          <div onClick={handleCall} className="px-6 py-3 bg-[#03a776] font-bold flex items-center gap-2 ">
+          <div
+            onClick={handleCall}
+            className="px-6 py-3 bg-[#03a776] font-bold flex items-center gap-2 "
+          >
             <FaPhone className="text-xl" /> Call now{" "}
           </div>
         </div>
