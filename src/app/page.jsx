@@ -29,18 +29,21 @@ export default function Home() {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-      nomPrenom: "",
-      modeleVoiture: "",
-      telephone: "",
-      email: "",
-      codePostal: "",
-      commentaire: "",
+      
     });
   };
 
   const handleSubmit = () => {
     console.log("Formulaire envoyé avec les valeurs suivantes:");
     console.log(formData);
+    setFormData({
+    nomPrenom: "",
+    modeleVoiture: "",
+    telephone: "",
+    email: "",
+    codePostal: "",
+    commentaire: "",
+  });
   };
   const handleCall = () => {
     window.location.href = "tel:+213556347931"; // Replace with your desired number
