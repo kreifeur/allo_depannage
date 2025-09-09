@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaPhone } from "react-icons/fa";
-import image from "../../../public/v-logo.png";
+import image from "../../../public/1.png";
 import { IoLocation } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";
@@ -21,14 +21,20 @@ const Navbar = () => {
           <IoLocation className="text-md" /> Île-de-France
         </a>
         <a href="/#contact" className="flex items-center gap-1 ">
-          Contact us <FaArrowRightLong className="text-md text-[#03a776]" />
+          СONTACTEZ-NOUS <FaArrowRightLong className="text-md text-[#03a776]" />
         </a>
       </div>
 
       <div className="h-[14vh] flex items-center   border-b justify-between bg-white">
         <Link href="/" className="h-[10vh]  sm:px-[4vh] px-2 z-[3]">
-          <Image className="h-full" width={150} height={300} src={image.src} srcSet="cc"
-              alt="einma"/>
+          <Image
+            className="h-full"
+            width={150}
+            height={300}
+            src={image.src}
+            srcSet="cc"
+            alt="einma"
+          />
         </Link>
         <ul className="flex gap-7 items-center h-full">
           <div className="sm:flex hidden gap-7 items-center h-full ">
@@ -39,16 +45,20 @@ const Navbar = () => {
             <Link href="/Certificat de cession.pdf" passHref>
               Certificat de cession
             </Link>
-            <Link href="/privacy">Politique de confidentialité</Link>
             <Link href="https://siv.interieur.gouv.fr/map-usg-ui/do/accueil_certificat">
               Certificat de non-gage
             </Link>
+            <Link href="/privacy">Politique de confidentialité</Link>
           </div>
           <div className="flex h-full">
-            <li onClick={handleCall} className="sm:px-6 px-4 bg-[#03a776] h-full flex items-center font-bold text-white gap-2">
+            <li
+              onClick={handleCall}
+              className="sm:px-6 px-4 bg-[#03a776] h-full flex items-center font-bold text-white gap-2"
+            >
               <FaPhone className="sm:text-xl text-2xl" />{" "}
-              <div  className="sm:flex hidden">
-                Call now{" "}
+              <div className="sm:flex hidden flex-col">
+                <p>APPELEZ-NOUS</p>
+                <p>Appel gratuit</p>{" "}
               </div>
             </li>
             <li className="sm:px-10 px-4 bg-black h-full flex items-center font-bold text-white sm:hidden  z-[3]">
@@ -71,10 +81,10 @@ const Navbar = () => {
         <Link href="/Certificat de cession.pdf" passHref>
           Certificat de cession
         </Link>
-        <Link href="/privacy">Politique de confidentialité</Link>
         <Link href="https://siv.interieur.gouv.fr/map-usg-ui/do/accueil_certificat">
           Certificat de non-gage
         </Link>
+        <Link href="/privacy">Politique de confidentialité</Link>
       </ul>
     </div>
   );

@@ -29,7 +29,6 @@ export default function Home() {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-      
     });
   };
 
@@ -37,13 +36,13 @@ export default function Home() {
     console.log("Formulaire envoyé avec les valeurs suivantes:");
     console.log(formData);
     setFormData({
-    nomPrenom: "",
-    modeleVoiture: "",
-    telephone: "",
-    email: "",
-    codePostal: "",
-    commentaire: "",
-  });
+      nomPrenom: "",
+      modeleVoiture: "",
+      telephone: "",
+      email: "",
+      codePostal: "",
+      commentaire: "",
+    });
   };
   const handleCall = () => {
     window.location.href = "tel:+213556347931"; // Replace with your desired number
@@ -123,8 +122,10 @@ export default function Home() {
 
         <div className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.7)] text-white flex flex-col sm:flex-row  items-center justify-center gap-4 z-[1] sm:px-8 px-2">
           <div className="text-white z-[1] flex flex-col sm:gap-8 gap-5 sm:w-[50%]">
-            <div className="sm:text-5xl font-bold text-3xl">ALLO DEPANNAGE</div>
-            <p className="sm:text-md   text-md">
+            <div className="sm:text-5xl font-bold text-3xl">
+              ALLO RECYCLAGE VHU
+            </div>
+            <p className="sm:text-md  text-justify w-96  ">
               Notre équipe, composée d’une vingtaine d’experts, est apte à
               intervenir dans toute l’Ile de France gratuitement afin de vous
               débarrasser de votre épave dans les meilleures conditions et
@@ -134,7 +135,7 @@ export default function Home() {
               onClick={handleCall}
               className="bg-[#03a776] px-8 py-3 font-bold sm:max-w-max "
             >
-              <p>Appel Gratuit -24h/24 </p>
+              <p>Appel gratuit 7j/7 </p>
               <p>+213 556347931</p>
             </button>
           </div>
@@ -169,7 +170,7 @@ export default function Home() {
             <RiStarSFill className="text-6xl text-[#03a776]" />
           </div>
           <div className="text-5xl font-bold ">10</div>
-          <div>Ans dexpériense</div>
+          <div>ans dexpériense</div>
         </div>
 
         <div className="flex flex-col gap-2 items-center">
@@ -177,7 +178,7 @@ export default function Home() {
             <FaBuilding className="text-6xl text-[#03a776]" />
           </div>
           <div className="text-5xl font-bold ">7</div>
-          <div>Départements IDF</div>
+          <div>départements IDF</div>
         </div>
 
         <div className="flex flex-col gap-2 items-center">
@@ -185,7 +186,7 @@ export default function Home() {
             <GiTowTruck className="text-6xl text-[#03a776]" />
           </div>
           <div className="text-5xl font-bold ">3251</div>
-          <div>Epaves remorquées</div>
+          <div>epaves remorquées</div>
         </div>
 
         <div className="flex flex-col gap-2 items-center">
@@ -193,7 +194,7 @@ export default function Home() {
             <HiMiniUserGroup className="text-6xl text-[#03a776]" />
           </div>
           <div className="text-5xl font-bold ">5</div>
-          <div>Remorqueurs</div>
+          <div>remorqueurs</div>
         </div>
       </div>
 
@@ -204,18 +205,17 @@ export default function Home() {
             <div className="font-bold text-2xl uppercase">
               Qui sommes-nous ?
             </div>
-            <div className="text-md">
+            <div className="text-md text-justify w-96">
               ALLO RECYCLAGE VHU agrée est une équipe de professionnels
               confirmés, spécialisée dans l’enlèvement d’épave et le recyclage
               de tous types de véhicules à Paris et sa banlieue depuis plus de
-              15 ans. <br /> Nous disposons d’une expérience significative dans
-              le recyclage des métaux, ainsi que le dépannage et l’assistance de
-              voitures. <br />
-              Les maîtres-mots de la satisfaction des clients.
+              15 ans. Nous disposons d’une expérience significative dans le
+              recyclage des métaux, ainsi que le dépannage et l’assistance
+              devoitures.Les maîtres-mots de la satisfaction des clients.
             </div>
-            <div className="font-bold flex gap-2 items-center">
+            <a href="#frequent" className="font-bold flex gap-2 items-center">
               VOIR PLUS <FaArrowRightLong className="text-[#03a776] text-md" />
-            </div>
+            </a>
           </div>
         </div>
         <div className="sm:w-[50%] h-full flex items-center sm:justify-center">
@@ -240,7 +240,7 @@ export default function Home() {
           <div className="font-bold text-3xl uppercase ">
             L’écologie du recyclage :
           </div>
-          <div className="text-md">
+          <div className="text-md text-justify w-96">
             Enjeu crucial du moment, la protection de l’environnement est
             désormais une priorité collective et sociale face à l’urgence
             climatique. Le recyclage des métaux réduit considérablement les
@@ -258,16 +258,18 @@ export default function Home() {
         <div className="sm:w-[50%]  flex flex-col gap-4 items-center justify-center">
           <div className="sm:w-[70%] flex flex-col gap-4">
             <div className="font-bold text-2xl">
-              POURQUOI <span className="text-orange-500">ALLO DEPANNAGE</span> !
+              POURQUOI{" "}
+              <span className="text-orange-500">
+                ALLO RECYCLAGE VHU EPAVISTE?{" "}
+              </span>{" "}
+              !
             </div>
-            <div className="text-md">
-              Epaviste Gratuit IDF est là pour s’occuper de vos besoins
-              d’enlèvement d’épave gratuit à Paris à tout moment, n’importe quel
-              jour. Nous prenons en charge toutes les tâches liées à ce
-              processus difficile.
-            </div>
-            <div className="font-bold flex gap-2 items-center">
-              VOIR PLUS <FaArrowRightLong className="text-[#03a776] text-md" />
+            <div className="text-md text-justify w-96">
+              Nos collaborateurs sont aptes à répondre à vos besoins dans des
+              délais records et dans les meilleures conditions. Un recensement
+              d&apos;informations est effectué lors du premier appel, lors
+              duquel vous pouvons vous aiguiller dans vos démarches. A votre
+              disposition!
             </div>
           </div>
         </div>
@@ -293,14 +295,15 @@ export default function Home() {
             <div className="font-bold text-2xl uppercase mb-1">
               Ile de France
             </div>
-            <div className="mb-5 font-bold">BESOIN D’AIDE EN URGENCE ?</div>
-            <div className="text-md">
-              Recycle-Epave.fr vous proposent leurs services d’elevement d’épave
-              à Paris et dans toute la région Parisienne (75, 91, 92, 932, 94,
-              95, 77, 78). Nous sommes présents dans toute la région parisienne
-              ainsi que dans les départements limitrophes. Si vous envisagez de
-              récupérer votre moto ou votre véhicule, n’hésitez pas à faire
-              appel à nos services (60, 27, 28, 45, 89, 02…).
+            <div className="mb-5 font-bold">
+              ENLEVEMENT D&apos;URGENCE GRATUIT
+            </div>
+            <div className="text-md text-justify w-96">
+              Nous proposons gratuitement un service d&apos;enlèvement de
+              véhicule d&apos;urgence dans toute la région parisienne (75, 77,
+              78, 91, 92,93,94,95) et dans les départements limitrophes
+              (60,27,28,45,89,02..). N&apos;hésitez pas à nous solliciter pour
+              tout complément.
             </div>
           </div>
         </div>
@@ -318,7 +321,7 @@ export default function Home() {
       </div>
 
       {/* Q&F */}
-      <div className="max-w-4xl mx-auto p-4">
+      <div id="frequent" className="max-w-4xl mx-auto p-4">
         <div className="font-bold text-2xl uppercase mb-4 ">
           Questions Fréquentes
         </div>
@@ -365,14 +368,14 @@ export default function Home() {
         <div className="sm:w-[50%] w-full h-full flex flex-col gap-6 items-center justify-center sm:p-8 ">
           <div className="flex flex-col gap-4 items-center w-full">
             <div className="font-bold text-2xl uppercase mb-1 ">
-              contactez nous
+              CONTACTEZ-NOUS
             </div>
             <div className="w-full flex flex-col gap-5">
               <input
                 name="nomPrenom"
                 value={formData.nomPrenom}
                 onChange={handleChange}
-                placeholder="Nom et Prenom"
+                placeholder="Nom et prénom"
                 className="border px-4 outline-none py-2 w-full"
                 type="text"
               />
@@ -380,15 +383,25 @@ export default function Home() {
                 name="modeleVoiture"
                 value={formData.modeleVoiture}
                 onChange={handleChange}
-                placeholder="Modele de voiture"
+                placeholder="Type et modèle de véhicule:"
                 className="border px-4 outline-none py-2 w-full"
                 type="text"
               />
+              <div>
+                <label className="">Date d&apos;intervention souhaitée :</label>
+                <input
+                  name="dateint"
+                  placeholder="Date d'intervention souhaitée:"
+                  className="border px-4 outline-none py-2 w-full"
+                  type="datetime-local"
+                />
+              </div>
+
               <input
                 name="telephone"
                 value={formData.telephone}
                 onChange={handleChange}
-                placeholder="Telephone"
+                placeholder="Téléphone:"
                 className="border px-4 outline-none py-2 w-full"
                 type="text"
               />
@@ -396,7 +409,7 @@ export default function Home() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="E-mail"
+                placeholder="Courriel:"
                 className="border px-4 outline-none py-2 w-full"
                 type="text"
               />
@@ -404,7 +417,7 @@ export default function Home() {
                 name="codePostal"
                 value={formData.codePostal}
                 onChange={handleChange}
-                placeholder="code Postal"
+                placeholder="Code postal:"
                 className="border px-4 outline-none py-2 w-full"
                 type="text"
               />
@@ -412,7 +425,7 @@ export default function Home() {
                 name="commentaire"
                 value={formData.commentaire}
                 onChange={handleChange}
-                placeholder="commentaire"
+                placeholder="Observations utiles:"
                 className="border px-4 outline-none py-2 w-full"
                 type="text"
               />
@@ -421,7 +434,7 @@ export default function Home() {
                 onClick={handleSubmit}
                 className="px-6 py-3 bg-[#03a776] font-bold flex items-center justify-center text-white gap-2"
               >
-                <IoSend className="text-xl" /> SEND NOW
+                <IoSend className="text-xl" /> Envoyer
               </button>
             </div>
           </div>
@@ -439,12 +452,12 @@ export default function Home() {
         style={{ backgroundImage: `url(${image.src})` }}
       >
         <div className="absolute inset-0 w-full h-full bg-[rgba(0,0,0,0.7)] text-white flex flex-col items-center justify-center gap-4 z-[1]">
-          <div className="font-bold text-3xl">CONTACT US NOW</div>
+          <div className="font-bold text-3xl">Contactez-nous</div>
           <div
             onClick={handleCall}
             className="px-6 py-3 bg-[#03a776] font-bold flex items-center gap-2 "
           >
-            <FaPhone className="text-xl" /> Call now{" "}
+            <FaPhone className="text-xl" /> Appelez-nous gratuitement{" "}
           </div>
         </div>
       </div>

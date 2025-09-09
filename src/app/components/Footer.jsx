@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import image from "../../../public/w-logo.png";
+import image from "../../../public/2.png";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
@@ -18,13 +18,13 @@ const Footer = () => {
       <div className="flex items-center justify-between p-3 border-b sm:flex-row flex-col gap-8">
         <div className="w-[150px]">
           <Image
-                        className="h-full"
-                        width={150}
-                        height={300}
-                        src={image.src}
-                        srcSet="cc"
-                        alt="einma"
-                      />
+            className="h-full"
+            width={150}
+            height={300}
+            src={image.src}
+            srcSet="cc"
+            alt="einma"
+          />
         </div>
         <ul className="flex items-center sm:gap-8 sm:flex-row flex-col gap-3">
           <a href="/#ile" className="flex items-center gap-1">
@@ -32,7 +32,7 @@ const Footer = () => {
             <IoLocation className="text-md" /> Île-de-France
           </a>
           <a href="/#contact" className="flex items-center gap-1 ">
-            Contact us
+            Contactez-nous
           </a>
         </ul>
       </div>
@@ -53,10 +53,10 @@ const Footer = () => {
           <Link href="/Certificat de cession.pdf" passHref>
             Certificat de cession
           </Link>
-          <Link href="/privacy">Politique de confidentialité</Link>
           <Link href="https://siv.interieur.gouv.fr/map-usg-ui/do/accueil_certificat">
             Certificat de non-gage
           </Link>
+          <Link href="/privacy">Politique de confidentialité</Link>
         </ul>
       </div>
     </div>
