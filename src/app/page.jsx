@@ -125,7 +125,7 @@ export default function Home() {
             <div className="sm:text-5xl font-bold text-3xl">
               ALLO RECYCLAGE VHU
             </div>
-            <p className="sm:text-md  text-justify w-96  ">
+            <p className="sm:text-md  text-justify sm:w-96  ">
               Notre équipe, composée d’une vingtaine d’experts, est apte à
               intervenir dans toute l’Ile de France gratuitement afin de vous
               débarrasser de votre épave dans les meilleures conditions et
@@ -205,7 +205,7 @@ export default function Home() {
             <div className="font-bold text-2xl uppercase">
               Qui sommes-nous ?
             </div>
-            <div className="text-md text-justify w-96">
+            <div className="text-md text-justify sm:w-96">
               ALLO RECYCLAGE VHU agrée est une équipe de professionnels
               confirmés, spécialisée dans l’enlèvement d’épave et le recyclage
               de tous types de véhicules à Paris et sa banlieue depuis plus de
@@ -240,7 +240,7 @@ export default function Home() {
           <div className="font-bold text-3xl uppercase ">
             L’écologie du recyclage :
           </div>
-          <div className="text-md text-justify w-96">
+          <div className="text-md text-justify sm:w-96">
             Enjeu crucial du moment, la protection de l’environnement est
             désormais une priorité collective et sociale face à l’urgence
             climatique. Le recyclage des métaux réduit considérablement les
@@ -264,7 +264,7 @@ export default function Home() {
               </span>{" "}
               !
             </div>
-            <div className="text-md text-justify w-96">
+            <div className="text-md text-justify sm:w-96">
               Nos collaborateurs sont aptes à répondre à vos besoins dans des
               délais records et dans les meilleures conditions. Un recensement
               d&apos;informations est effectué lors du premier appel, lors
@@ -298,7 +298,7 @@ export default function Home() {
             <div className="mb-5 font-bold">
               ENLEVEMENT D&apos;URGENCE GRATUIT
             </div>
-            <div className="text-md text-justify w-96">
+            <div className="text-md text-justify sm:w-96">
               Nous proposons gratuitement un service d&apos;enlèvement de
               véhicule d&apos;urgence dans toute la région parisienne (75, 77,
               78, 91, 92,93,94,95) et dans les départements limitrophes
